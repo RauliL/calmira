@@ -1,0 +1,271 @@
+#include "locale.pas"
+
+STRINGTABLE
+{
+  SCannotFindLicense, "LICENSE.TXT not found.  You can obtain "
+    "a GNU General Public License by writing to the Free Software "
+    "Foundation Inc., 675 Mass Ave, Cambridge, MA 02139, USA.";
+  SCannotRunNotepad, "Unable to run Notepad.  Read LICENSE.TXT "
+    "with another text editor.";
+  SWelcome, "Welcome";
+
+  SCannotMoveToBin, "Unable to move %s into the bin.";
+  SCannotRestoreItem, "Unable to restore %s.";
+  SCannotRestoreFolderOverFile, "Unable to restore folder %s because there "
+    "is an existing file using that name.";
+  SQueryReplaceFile, "Do you want to replace the existing file with "
+    "the name %s?";
+
+  SDriveRefPrompt, "&Drive:";
+  SFolderRefPrompt, "&Folder:";
+  SFileRefPrompt, "&File:";
+  SInternetRefPrompt, "&URL:";
+
+  SMenuCascadeBrowsers, "Cascade browsers";
+  SMenuArrangeIcons, "Arrange task icons";
+  SMenuLineUpIcons, "Line up icons";
+  SMenuCloseBrowsers, "Close browsers";
+  SMenuClearDesktop, "Clear desktop";
+  SMenuProperties, "Properties...";
+  SMenuAbout, "About...";
+  SSelectFolder, "Select Folder";
+  SAliasProperties, "Alias Properties";
+  SShortcutProperties, "Shortcut Properties";
+  SMenuShortcutProperties, "&Properties...";
+  SMenuShortcutOpen, "&Open";
+  SMenuShortcutRemove, "&Remove";
+  SMenuShortcutMove, "&Move";
+  SMenuBinEmpty, "Empty bin";
+
+  SCloseUnnamedDialog, "Please close Calmira's active dialog box first.";
+  SCloseSpecificDialog, "Please close the \"%s\" dialog first.";
+  SNotifyEndWindows, "This will end your Windows session.";
+  SQueryQuit, "Are you sure you want to close Calmira?";
+  SOpenFolder, "Open folder";
+  SFolderName, "Folder name";
+  SUnknownCommand, "Unknown command \"%s\"";
+  SCannotOpenFolder, "%s not found.\n";
+    "The folder has been deleted or the drive is not ready.";
+  SQueryReplaceAlias, "Do you want to replace the existing alias?";
+  SCannotOpenTarget, "%s not found.\n";
+    "Make sure the file or folder pointed to by the shortcut exists.";
+  SQueryDeleteShortcut, "Are you sure you want to delete the shortcut to \"%s\"?";
+
+  SFileAlreadyExists, "A file called %s already exists.";
+  SFolderAlreadyExists, "A folder called %s already exists.";
+  SCannotChangeAttr, "Unable to change attributes of %s";
+  SInvalidFilename, "%s is not a valid filename.";
+  SCannotRename, "Unable to rename %s to %s.";
+  SChangeDescription, "Change description";
+  SDescribe, "Describe \"%s\":";
+  SCannotOpenFileWith, "Unable to open file %s with program %s";
+  SCannotPutFolderOnSelf, "You cannot copy or move a folder onto itself.";
+  SCannotPutFolderInSelf, "You cannot copy or move a folder into one of "
+    "it's sub-folders.";
+  SCannotPutFolderOverFile, "You cannot copy or move the folder %s because "
+    "a file with the same name already exists.";
+
+  SQueryAffectProtected, "%s is a Read Only, Hidden or System file.\n"
+    "Are you sure you want to %s this file?";
+  SCannotCopyFileToSelf, "You cannot copy file %s to itself.";
+  SCannotMoveFileToSelf, "You cannot move file %s to itself.";
+  SCannotCreateFolder, "Unable to create folder %s.";
+  SCannotReplaceFile, "Unable to replace %s.";
+  SCannotMoveFile, "Unable to move %s.";
+  SCannotCyclicCopy, "You cannot copy a folder into itself or one of it's sub-folders.";
+  SCannotCyclicMove, "You cannot move a folder into itself or one of it's sub-folders.";
+  SCannotDeleteFile, "Unable to delete %s.";
+  SNoFilesFound, "No files were found.";
+  SCannotRunDefViewer, "Unable to run the default viewer. ";
+    "Specify a default file viewer in File System properties."
+  SFileNotAssociated, "This file is not associated with a program. "
+    "Associate it first, or specify a default file viewer to use.";
+  SCannotRunOrView, "Unable to run program or view the file %s.";
+  SConfirmNewFolder, "%s does not exist.  Do you want to create a new folder?";
+
+  SNetSuccess, "The connection/disconnection was successful";
+  SNetNotSupported, "This operation is not supported";
+  SOutOfMemory, "Out of memory";
+  SNetError, "An error has occured on the network";
+  SBadPointer, "Invalid pointer";
+  SBadNetworkResource, "Invalid network resource name";
+  SBadLocalName, "Invalid local device";
+  SInvalidPassword, "User unknown or invalid password";
+  SAccessDenied, "Access denied";
+  SFilesWereOpen, "The connection was not cancelled because there are files open";
+  SAlreadyConnected, "This device is already remotely connected";
+  SNetOperationFailed, "The connection/disconnection failed";
+  SQueryCloseOpenFiles, "Are you sure you want to close any open files or print jobs?";
+
+  SQueryBinItems, "Are you sure you want to move %d item%s from %s to the Bin?";
+  SQueryCopyItems, "Are you sure you want to copy %d item%s from %s to %s?";
+  SQueryMoveItems, "Are you sure you want to move %d item%s from %s to %s?";
+  SQueryDeleteItems, "Are you sure you want to delete %d item%s from %s?";
+  SCannotPutToSelf, "You cannot copy or move items to themselves.";
+  SCreateFolder, "Create folder";
+  SNewFolderName, "Enter new folder name:";
+  SRename, "Rename %s";
+  SNewFilename, "Enter new filename:";
+  SCreateAlias, "Create alias";
+  SAliasFilename, "Enter alias filename:";
+  SPrintFile, "Print file";
+  SFilename, "Enter filename:";
+  SDuplicateFile, "Duplicate %s";
+  SDirectoryOf, "Directory of ";
+
+  SCopy, "Copy";
+  SMove, "Move";
+  SDelete, "Delete";
+  SCopyFile, "Copy file";
+  SMoveFile, "Move file";
+  SCopyFolder, "Copy folder";
+  SMoveFolder, "Move folder";
+  SDeleteFile, "Delete file";
+  SDeleteFolder, "Delete folder";
+  SProgressCopy, "Copying...";
+  SProgressMove, "Moving...";
+  SProgressDelete, "Deleting";
+  SProgressBinning, "Moving to bin";
+  SProgressRestoring, "Restoring from bin";
+  SProgressEmptying, "Emptying bin";
+
+  SAddMenuItem, "Add menu item";
+  SInsertMenuItem, "Insert menu item";
+  SMenuItemProperties, "Menu item properties";
+  SQueryDeleteMenu, "Are you sure you want to delete the entire sub-menu?";
+  SCannotFindProgman, "Unable to find Program Manager.";
+  SCaptionNeedsText, "The menu caption cannot be empty.";
+  SQuerySaveAdvanced, "Are you sure you want to save all advanced settings?";
+  SAddAdvanced, "Add an entry";
+  SIdentValue, "Ident=Value";
+  SModifyAdvanced, "Modify entry";
+  SAddExclusion, "Add taskbar exclusion";
+  SModifyExclusion, "Modify taskbar exclusion";
+  SModuleClass, "Module [classname]";
+  SAddApplet, "Add applet tray program";
+  SModifyApplet, "Modify applet tray program";
+  SAppletFormat, "<Popup hint>=<command line>";
+
+  SUnknown, "Unknown";
+  SFolderContents, "%s in %d file%s";
+  SSelectionContents, "%d file%s in %d folder%s";
+  STotalContents, "%d file%s, %d folder%s, %s total";
+  SVersion, "Version";
+  SAssociation, "Association";
+  SAssociateTypeWith, "Associate the file type .%s with:";
+  SNoRegCommand, "No command specified.";
+  SSpecifyFiles, "Please specify the files to search for.";
+  SStopSearch, "Stop";
+  SStartSearch, "Search";
+  SNoMatchingFiles, "No matching files found.";
+  SFindListboxFull, "The Find dialog's listbox is full.";
+
+  SProductName, "Product name";
+  SLegalCopyright, "Legal copyright";
+  SDescription, "Description";
+  SType, "Type";
+  SSubType, "Subtype";
+  SFileOS, "File OS";
+  SComments, "Comments";
+  SProductVersion, "Product version";
+  SFileVersion, "File version";
+  SCompany, "Company";
+  SLegalTrademarks, "Legal trademarks";
+  SInternalName, "Internal name";
+  SPrivateBuild, "Private build";
+  SSpecialBuild, "Special build";
+  SOriginalFilename, "Original filename";
+  SWOWVersion, "WOW version";
+
+  SQueryTerminate, "WARNING: Terminating a program may cause undesired results "
+    "including loss of resources and system instability. The program will not "
+    "be able to save it's data. Are you sure you want to terminate \"%s\"?"
+
+  SCreateNewUser, "Create new user";
+  SUserName, "User name:";
+  SEnterPassword, "Enter password:";
+  SConfirmPassword, "Confirm password:";
+  SChangePassword, "Change password";
+  SEnterOldPassword, "Enter old password:";
+  SEnterNewPassword, "Enter new password:";
+  SConfirmNewPassword, "Confirm new password:";
+  SInvalidUserName, "The user name is invalid. A user name can only contain "
+    "letters and numbers, and must be between 1 and 8 characters long.";
+  SPasswordMismatch, "Your new passwords do not match. Please enter them again.";
+  SEditEntryCaption, "Edit entry";
+  SInvalidOldPassword, "The old password you entered is invalid."
+
+  SMObjOpen, "&Open";
+  SMObjOpenWith, "Open &with";
+  SMObjInspect, "&Inspect";
+  SMObjCut, "Cu&t";
+  SMObjCopy, "&Copy";
+  SMObjPaste, "&Paste";
+  SMObjDelete, "&Delete";
+  SMObjRename, "Re&name";
+  SMObjDescribe, "Descri&be";
+  SMObjEditAlias, "Edit alia&s";
+  SMObjDuplicate, "D&uplicate";
+  SMObjProperties, "P&roperties";
+
+  SMWinLargeIcons, "Lar&ge icons";
+  SMWinSmallIcons, "S&mall icons";
+  SMWinDetails, "&Details";
+  SMWinSortByName, "Sort by &Name";
+  SMWinSortByType, "Sort by &Type";
+  SMWinSortBySize, "Sort by &Size";
+  SMWinSortByDate, "Sort by &Date";
+  SMWinFileSystem, "File s&ystem...";
+  SMWinSetFilter, "Set &filter...";
+  SMWinCreateFolder, "&Create folder...";
+  SMWinCreateAlias, "Create &alias...";
+
+  SCorruptEXE, "The system is out of memory, or the .EXE file is corrupt.";
+  SFileNotFound, "%s not found. Make sure the path is correct and "
+    "that the file exists.";
+  SSharingError, "Sharing violation or network access error.";
+  SDLLFailed, "A DLL required to run this application failed to load.";
+  SAppOutOfMemory, "There was not enough memory to start the application. "
+    "Close some windows and try again.";
+  SIncorrectWinVer, "This application requires a newer version of Windows. "
+    "(This error indicates mismatched OLE DLLs.)";
+  SInvalidEXE, "Invalid EXE format. Either it is not a Windows application "
+    "or there is an error in the .EXE file.";
+  SNonWindowsApp, "This is not a valid Windows application. It was desinged "
+    "for a different operating system.";
+  SRealModeApp, "The ascociated program for this file could not be found, or "
+    "this application was developed for an earlier version of Windows.";
+  SSecondInstance, "The application failed to load a second instance of itself.";
+  SCompressedEXE, "This is a compressed executable file. The file must be ";
+    "decompressed before it can be loaded.";
+  SCorruptDLL, "A DLL required to run this application is corrupt.";
+  SRequiresWin32, "This 32-bit application is not supported by Win32s.";
+
+  STHintParent, "Parent folder";
+  STHintNewFolder, "Create folder";
+  STHintConnect, "Map network drive";
+  STHintDisConnect, "Disconnect network drive";
+  STHintCut, "Cut";
+  STHintCopy, "Copy";
+  STHintPaste, "Paste";
+  STHintDelete, "Delete";
+  STHintRename, "Rename";
+  STHintProperties, "Properties";
+  STHintLargeIcons, "Large icons view";
+  STHintSmallIcons, "Small icons view";
+  STHintDetails, "Details view";
+  STHintSortName, "Sort by name";
+  STHintSortType, "Sort by type";
+  STHintSortSize, "Sort by size";
+  STHintSortDate, "Sort by date";
+
+  SCFilename, "Filename";
+  SCSize, "Size";
+  SCType, "Type";
+  SCModified, "Modified";
+  SCAttributes, "Attributes";
+  SCDescription, "Description";
+  SCFile, " File";
+  SCFolder, "Folder";
+  SCAlias, "Alias";
+}
